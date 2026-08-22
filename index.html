@@ -8,8 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
-<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+<link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
 
@@ -17,7 +17,7 @@
 
 <header class="site-header">
   <div class="container nav-bar">
-    <a class="brand" href="index.html">
+    <a class="brand" href="/">
       <span class="brand-name">Counsel Capital Group<small>Advisory &amp; Compliance</small></span>
     </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" id="nav-toggle-btn">
@@ -26,12 +26,12 @@
     </button>
     <nav aria-label="Primary">
       <ul class="nav-links" id="primary-navigation">
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a class="nav-cta" href="contact.html">Request a Consultation</a></li>
+        <li><a href="/" aria-current="page">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/services/">Services</a></li>
+        <li><a href="/team/">Team</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a class="nav-cta" href="/contact/">Request a Consultation</a></li>
       </ul>
     </nav>
   </div>
@@ -40,28 +40,13 @@
 <main id="main-content">
 
   <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <span class="eyebrow">Business Consultation &middot; Legal Operations &middot; Compliance</span>
-        <h1>Disciplined counsel for organizations that cannot afford to guess.</h1>
-        <p class="hero-lede">Counsel Capital Group advises corporations, law departments, and counsel on the operational and regulatory decisions that carry the greatest consequence — engineered with the rigor of a legal practice and the clarity of a trusted advisor.</p>
-        <div class="button-row">
-          <a class="btn btn-primary" href="contact.html">Request a Consultation</a>
-          <a class="btn btn-secondary" href="about.html">Our Offices Worldwide</a>
-        </div>
-      </div>
-      
-        <svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="160" cy="160" r="150" fill="none" stroke="#0b1e3d" stroke-width="1.5"/>
-          <circle cx="160" cy="160" r="132" fill="none" stroke="#a98b4c" stroke-width="1"/>
-          <circle cx="160" cy="160" r="118" fill="none" stroke="#0b1e3d" stroke-width="1"/>
-          <path d="M160 96 L192 114 V158 C192 190 178 210 160 218 C142 210 128 190 128 158 V114 Z" fill="none" stroke="#0b1e3d" stroke-width="2"/>
-          <line x1="140" y1="150" x2="180" y2="150" stroke="#a98b4c" stroke-width="2"/>
-          <line x1="140" y1="164" x2="180" y2="164" stroke="#a98b4c" stroke-width="2"/>
-          <line x1="140" y1="178" x2="172" y2="178" stroke="#a98b4c" stroke-width="2"/>
-          <text x="160" y="252" font-family="Playfair Display, serif" font-size="15" font-weight="700" fill="#0b1e3d" text-anchor="middle" letter-spacing="2">COUNSEL CAPITAL</text>
-          <text x="160" y="270" font-family="Inter, sans-serif" font-size="9" fill="#a98b4c" text-anchor="middle" letter-spacing="4">EST. GLOBAL ADVISORY</text>
-        </svg>
+    <div class="container">
+      <span class="eyebrow">Business Consultation &middot; Legal Operations &middot; Compliance</span>
+      <h1>Disciplined counsel for organizations that cannot afford to guess.</h1>
+      <p class="hero-lede">Counsel Capital Group advises corporations, law departments, and counsel on the operational and regulatory decisions that carry the greatest consequence — engineered with the rigor of a legal practice and the clarity of a trusted advisor.</p>
+      <div class="button-row">
+        <a class="btn btn-primary" href="/contact/">Request a Consultation</a>
+        <a class="btn btn-secondary" href="/about/">Our Offices Worldwide</a>
       </div>
     </div>
   </section>
@@ -155,8 +140,8 @@
     <div class="container">
       <p class="statement" id="cta-heading">Sound counsel is not a luxury. It is the cost of operating without surprises.</p>
       <div class="button-row" style="margin-top: 1.75rem;">
-        <a class="btn btn-primary" href="contact.html">Request a Consultation</a>
-        <a class="btn btn-secondary" href="services.html">Review Our Services</a>
+        <a class="btn btn-primary" href="/contact/">Request a Consultation</a>
+        <a class="btn btn-secondary" href="/services/">Review Our Services</a>
       </div>
     </div>
   </section>
@@ -173,19 +158,19 @@
       <div>
         <h2 class="footer-heading">Navigate</h2>
         <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/services/">Services</a></li>
+          <li><a href="/team/">Team</a></li>
+          <li><a href="/contact/">Contact</a></li>
         </ul>
       </div>
       <div>
         <h2 class="footer-heading">Practice Areas</h2>
         <ul class="footer-links">
-          <li><a href="services.html#consultation">Business Consultation</a></li>
-          <li><a href="services.html#legal-ops">Legal Operations</a></li>
-          <li><a href="services.html#compliance">Regulatory Compliance</a></li>
+          <li><a href="/services/#consultation">Business Consultation</a></li>
+          <li><a href="/services/#legal-ops">Legal Operations</a></li>
+          <li><a href="/services/#compliance">Regulatory Compliance</a></li>
         </ul>
       </div>
       <div>
@@ -193,17 +178,17 @@
         <ul class="footer-links">
           <li>New York, NY</li>
           <li>United States</li>
-          <li><a href="contact.html">All 7 offices &rarr;</a></li>
+          <li><a href="/contact/">All 7 offices &rarr;</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <span>&copy; 2026 Counsel Capital Group. All rights reserved.</span>
-      <span><a href="accessibility.html">Accessibility Statement</a></span>
+      <span><a href="/accessibility/">Accessibility Statement</a></span>
     </div>
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="assets/script.js"></script>
 </body>
 </html>
