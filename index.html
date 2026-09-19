@@ -11,6 +11,56 @@
 <link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="stylesheet" href="assets/styles.css">
 <link rel="icon" type="image/png" href="/assets/favicon.png">
+<style>
+  .partner-marquee {
+    overflow: hidden;
+    padding: 4.5rem 0;
+  }
+
+  .partner-marquee__viewport {
+    overflow: hidden;
+    margin-top: 2rem;
+    mask-image: linear-gradient(to right, transparent, #000 7%, #000 93%, transparent);
+  }
+
+  .partner-marquee__track {
+    display: flex;
+    width: max-content;
+    animation: partner-marquee-scroll 38s linear infinite;
+  }
+
+  .partner-marquee__list {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    margin: 0;
+    padding: 0 0.45rem;
+    list-style: none;
+  }
+
+  .partner-marquee__name {
+    display: block;
+    padding: 0.8rem 1.2rem;
+    border: 1px solid rgba(19, 35, 60, 0.18);
+    border-radius: 999px;
+    color: var(--deep-navy);
+    background: #fff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+  }
+
+  @keyframes partner-marquee-scroll {
+    to { transform: translateX(-50%); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .partner-marquee__viewport { overflow-x: auto; mask-image: none; }
+    .partner-marquee__track { animation: none; }
+    .partner-marquee__list[aria-hidden="true"] { display: none; }
+  }
+</style>
 </head>
 <body>
 
@@ -41,7 +91,7 @@
   <section class="hero">
     <div class="container">
       <span class="eyebrow">Global Procurement &middot; Business Growth &middot; Legal Coordination</span>
-      <h1>Move your business forward-across markets, supply chains, and opportunities.</h1>
+      <h1>Move your business forward—across markets, supply chains, and opportunities.</h1>
       <p class="hero-lede">Counsel Capital Group helps businesses source and procure globally, build stronger sales strategies, and manage the commercial and legal matters that support sustainable growth.</p>
       <div class="button-row">
         <a class="btn btn-primary" href="/contact/">Discuss Your Needs</a>
@@ -77,6 +127,68 @@
     </div>
   </section>
 
+  <section class="partner-marquee section-alt" aria-labelledby="partners-heading">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Global Procurement Partners</span>
+        <h2 id="partners-heading">Trusted by businesses we support across global procurement.</h2>
+        <p>We are proud to have worked with businesses across retail, consumer goods, home, technology, and lifestyle categories.</p>
+      </div>
+    </div>
+    <div class="partner-marquee__viewport" role="region" aria-label="Businesses we have worked with in global procurement">
+      <div class="partner-marquee__track">
+        <ul class="partner-marquee__list">
+          <li><span class="partner-marquee__name">Mango</span></li>
+          <li><span class="partner-marquee__name">Desigual</span></li>
+          <li><span class="partner-marquee__name">Tendam</span></li>
+          <li><span class="partner-marquee__name">Cecotec</span></li>
+          <li><span class="partner-marquee__name">Taurus Group</span></li>
+          <li><span class="partner-marquee__name">Orbegozo</span></li>
+          <li><span class="partner-marquee__name">Jata Hogar</span></li>
+          <li><span class="partner-marquee__name">Famosa</span></li>
+          <li><span class="partner-marquee__name">Imaginarium</span></li>
+          <li><span class="partner-marquee__name">Bizak</span></li>
+          <li><span class="partner-marquee__name">Kiabi</span></li>
+          <li><span class="partner-marquee__name">Celio</span></li>
+          <li><span class="partner-marquee__name">Decathlon</span></li>
+          <li><span class="partner-marquee__name">Maisons du Monde</span></li>
+          <li><span class="partner-marquee__name">La Redoute</span></li>
+          <li><span class="partner-marquee__name">Groupe SEB</span></li>
+          <li><span class="partner-marquee__name">Lexibook</span></li>
+          <li><span class="partner-marquee__name">Archos</span></li>
+          <li><span class="partner-marquee__name">Janod</span></li>
+          <li><span class="partner-marquee__name">OVS</span></li>
+          <li><span class="partner-marquee__name">Piazza Italia</span></li>
+          <li><span class="partner-marquee__name">Geox</span></li>
+        </ul>
+        <ul class="partner-marquee__list" aria-hidden="true">
+          <li><span class="partner-marquee__name">Mango</span></li>
+          <li><span class="partner-marquee__name">Desigual</span></li>
+          <li><span class="partner-marquee__name">Tendam</span></li>
+          <li><span class="partner-marquee__name">Cecotec</span></li>
+          <li><span class="partner-marquee__name">Taurus Group</span></li>
+          <li><span class="partner-marquee__name">Orbegozo</span></li>
+          <li><span class="partner-marquee__name">Jata Hogar</span></li>
+          <li><span class="partner-marquee__name">Famosa</span></li>
+          <li><span class="partner-marquee__name">Imaginarium</span></li>
+          <li><span class="partner-marquee__name">Bizak</span></li>
+          <li><span class="partner-marquee__name">Kiabi</span></li>
+          <li><span class="partner-marquee__name">Celio</span></li>
+          <li><span class="partner-marquee__name">Decathlon</span></li>
+          <li><span class="partner-marquee__name">Maisons du Monde</span></li>
+          <li><span class="partner-marquee__name">La Redoute</span></li>
+          <li><span class="partner-marquee__name">Groupe SEB</span></li>
+          <li><span class="partner-marquee__name">Lexibook</span></li>
+          <li><span class="partner-marquee__name">Archos</span></li>
+          <li><span class="partner-marquee__name">Janod</span></li>
+          <li><span class="partner-marquee__name">OVS</span></li>
+          <li><span class="partner-marquee__name">Piazza Italia</span></li>
+          <li><span class="partner-marquee__name">Geox</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <section class="section-navy" aria-labelledby="reach-heading">
     <div class="container">
       <div class="section-head">
@@ -104,7 +216,7 @@
 
   <section class="section-alt" aria-labelledby="cta-heading">
     <div class="container">
-      <p class="statement" id="cta-heading">The right goods, the right growth plan, and the right business support, working together.</p>
+      <p class="statement" id="cta-heading">The right goods, the right growth plan, and the right business support—working together.</p>
       <div class="button-row" style="margin-top: 1.75rem;"><a class="btn btn-primary" href="/contact/">Start a Conversation</a><a class="btn btn-secondary" href="/services/">Review Our Services</a></div>
     </div>
   </section>
